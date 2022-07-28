@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables and Lists</title>
+    <style>
+        #schoolname{
+            width: fit-content;
+            margin: 10px auto;
+            text-align: center;
+        }
+        #schoolname h2{
+            font-size: 40px;
+            margin: 0px;
+            padding: 0px;
+            text-decoration: underline;
+            color: rgb(5, 65, 122);
+        }
+        #schoolname h4{
+            margin: 5px 100px;
+            padding: 0px;
+            width: fit-content;
+            display: inline-block; 
+            text-align: center;
+            font-size: 20px;
+        }
+        table, tr, td, th{
+            border: 1px solid black;
+            padding: 5px;
+            border-spacing: 5px;
+        }
+        .tablehead{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        
+        .tablehead h3{
+            width: fit-content;
+            margin: 0px auto;
+            padding: 5px 10px;
+            text-decoration: underline;
+            
+        }
+        .tableh4{
+            font-size: 20px;
+            margin: 5px 70px;
+            padding: 0px;
+            width: fit-content;
+            display: inline-block; 
+            text-align: center;
+        }
+        #Broadsheet{
+            width: 70%;
+            margin: 0 auto;
+            background-color: rgb(102, 221, 248);
+        }
+        .BroadsheetHeading{
+            background-color: rgb(4, 118, 156);
+        }
+        .col1{
+            width: 20px;
+            color: white;
+        }
+        .sn{
+            text-align: center;
+        }
+        .scores{
+            text-align: right;
+            cursor: pointer;
+        }
+        .scores:hover{
+           background-color: azure;
+       }
+        .totalscore{
+            text-align: right;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+       .totalscore:hover{
+           background-color: azure;
+       }
+        .columnheading{
+            text-align: center;
+            width: 120px;
+            height: 40px;
+            color: white;
+        }
+        .name{
+            text-align: left;
+            font-weight: bolder;
+            padding-left: 10px;
+            font-size: 17px;
+        }
+        tfoot{
+            font-weight: bold;
+        }
+        </style>
+</head>
+<body>
+    <header id="schoolname">
+        <h2>ST. BENEDICT HIGH SCHOOL</h2>
+        <h4>Class: SS2</h4>
+        <h4>Class Teacher: Mr Ade</h4>
+    </header>
+    <table id="Broadsheet">
+        <thead>
+            <tr class="tablehead">
+                <th colspan="9">
+                    <h3>STUDENT BROADSHEET</h3>
+                </th>
+            </tr>
+            <tr class="BroadsheetHeading">
+                <th class="col1">S/N</th>
+                <th class="columnheading">Students</th>
+                <th class="columnheading">Mathematics</th>
+                <th class="columnheading">English</th>
+                <th class="columnheading">Physics</th>
+                <th class="columnheading">Chemistry</th>
+                <th class="columnheading">Biology</th>
+                <th colspan="2" class="columnheading">Total Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="BroadsheetRow">
+                <td class="sn">1</td>
+                <td class="name">Solomon</td>
+                <td class="scores">72</td>
+                <td class="scores">43</td>
+                <td class="scores">78</td>
+                <td class="scores">73</td>
+                <td class="scores">37</td>
+                <td colspan="2" class="totalscore">303</td>
+            </tr>
+            <tr class="BroadsheetRow">
+                <td class="sn">2</td> 
+                <td class="name">Hastings</td>
+                <td class="scores">42</td>
+                <td class="scores">64</td>
+                <td class="scores">70</td>
+                <td class="scores">55</td>
+                <td class="scores">58</td>
+                <td colspan="2" class="totalscore">289</td>
+            </tr>
+            <tr class="BroadsheetRow">
+                <td class="sn">3</td>
+                <td class="name">Suamike</td>
+                <td class="scores">62</td>
+                <td class="scores">40</td>
+                <td class="scores">73</td>
+                <td class="scores">75</td>
+                <td class="scores">99</td>
+                <td colspan="2" class="totalscore">349</td>
+            </tr>
+            <tr class="BroadsheetRow">
+               <td class="sn">4</td> 
+               <td class="name">Ishmael</td>
+                <td class="scores">77</td>
+                <td class="scores">75</td>
+                <td class="scores">78</td>
+                <td class="scores">75</td>
+                <td class="scores">82</td>
+                <td colspan="2" class="totalscore">387</td>
+            </tr>
+            <tr class="BroadsheetRow">
+                <td class="sn">5</td>
+                <td class="name">Paul</td>
+                <td class="scores">72</td>
+                <td class="scores">40</td>
+                <td class="scores">72</td>
+                <td class="scores">70</td>
+                <td class="scores">97</td>
+                <td colspan="2" class="totalscore">351</td>
+            </tr>
+            <tr class="BroadsheetRow">
+                <td class="sn">6</td>
+                <td class="name">Oghenerume</td>
+                <td class="scores">76</td>
+                <td class="scores">64</td>
+                <td class="scores">48</td>
+                <td class="scores">99</td>
+                <td class="scores">37</td>
+                <td colspan="2"class="totalscore">324</td>
+            </tr>
+            <tr class="BroadsheetRow">
+                <td class="sn">7</td>
+                <td class="name">John</td>
+                <td class="scores">62</td>
+                <td class="scores">54</td>
+                <td class="scores">78</td>
+                <td class="scores">75</td>
+                <td class="scores">64</td>
+                <td colspan="2"class="totalscore">333</td>
+            </tr>
+            <tr class="BroadsheetRow">
+                <td class="sn">8</td>
+                <td class="name">Ametudiore</td>
+                <td class="scores">52</td>
+                <td class="scores">84</td>
+                <td class="scores">48</td>
+                <td class="scores">85</td>
+                <td class="scores">27</td>
+                <td colspan="2" class="totalscore">296</td>
+            </tr>
+            <tr class="BroadsheetRow">
+                <td class="sn">9</td>
+                <td class="name">Stephen</td>
+                <td class="scores">92</td>
+                <td class="scores">44</td>
+                <td  class="scores">78</td>
+                <td class="scores">65</td>
+                <td class="scores">61</td>
+                <td colspan="2" class="totalscore">340</td>
+            </tr>
+            <tr class="BroadsheetRow">
+                <td class="sn">10</td>
+                <td class="name">Philip</td>
+                <td class="scores">72</td>
+                <td class="scores">54</td>
+                <td  class="scores">83</td>
+                <td class="scores">65</td>
+                <td class="scores">61</td>
+                <td colspan="2" class="totalscore">335</td>
+            </tr>
+            <tr class="BroadsheetRow">
+                <td class="sn">11</td>
+                <td class="name">Patrick</td>
+                <td class="scores">92</td>
+                <td class="scores">64</td>
+                <td  class="scores">63</td>
+                <td class="scores">85</td>
+                <td class="scores">41</td>
+                <td colspan="2" class="totalscore">345</td>
+            </tr>
+            <tr class="BroadsheetRow">
+                <td class="sn">12</td>
+                <td class="name">Prudence</td>
+                <td class="scores">55</td>
+                <td class="scores">84</td>
+                <td  class="scores">66</td>
+                <td class="scores">73</td>
+                <td class="scores">62</td>
+                <td colspan="2" class="totalscore">340</td>
+            </tr>
+            <tr class="BroadsheetRow">
+                <td class="sn">13</td> 
+                <td class="name">Ewoma</td>
+                <td class="scores">70</td>
+                <td class="scores">55</td>
+                <td class="scores">42</td>
+                <td class="scores">64</td>
+                <td class="scores">58</td>
+                <td colspan="2" class="totalscore">289</td>
+            </tr>
+            <tr class="BroadsheetRow">
+                <td class="sn">14</td> 
+                <td class="name">Irene</td>
+                <td class="scores">42</td>
+                <td class="scores">64</td>
+                <td class="scores">70</td>
+                <td class="scores">55</td>
+                <td class="scores">58</td>
+                <td colspan="2" class="totalscore">289</td>
+            </tr>
+            <tr class="BroadsheetRow">
+                <td class="sn">15</td> 
+                <td class="name">Daniel</td>
+                <td class="scores">100</td>
+                <td class="scores">100</td>
+                <td class="scores">100</td>
+                <td class="scores">100</td>
+                <td class="scores">100</td>
+                <td colspan="2" class="totalscore">500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="9">
+                    <marquee width="100%" direction="left">
+                        School resumption date will be communicated via mail, please check your mail regularly.
+                    </marquee>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
